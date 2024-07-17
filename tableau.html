@@ -1,0 +1,50 @@
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showTable()">Afficher le tableau</button>
+  <table id="infoTable" style="display:none;">
+    <tr>
+      <th>Insurance type</th>
+      <th>Process</th>
+    </tr>
+    <tr>
+      <td>Business Travel (PABT)</td>
+      <td>Employees can get a tailor-made certificate directly from the insurer’s website: https://travelcertificate.chubbinsured.com with the policy number: FRBMNA19051</td>
+    </tr>
+    <tr>
+      <td>Cyber</td>
+      <td>Contact HO insurance team</td>
+    </tr>
+    <tr>
+      <td>Nuclear</td>
+      <td>Contact HO insurance team</td>
+    </tr>
+    <tr>
+      <td>D&O</td>
+      <td>Contact HO insurance team</td>
+    </tr>
+  </table>
+  <script>
+    function showTable() {
+      var table = document.getElementById('infoTable');
+      if (table.style.display === 'none') {
+        table.style.display = 'block';
+      } else {
+        table.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
